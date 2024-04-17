@@ -6,6 +6,7 @@
     --mainNum-font: "Nunit";
 
 
+    /* --mainBg-color: #f00; */
     --mainBg-color: #FAF7ED;
 
     --subBg100: #578DF9;
@@ -21,14 +22,30 @@
     --black300: #737373;
     --black400: #8C8C8C;
 
-    font-family: var(),var(),var();
+    font-family: var(--mainEng-font),var(--mainKor-font),var();
     font-size: 16px;
     line-height: 1.5;
     font-weight: 400;
 
 
     /* 아이폰 가로 모드에서 글씨 확대 금지 */
-
+-webkit-text-size-adjust: 100%;
 
     /* 폰트를 부드럽게 렌더링 하기 위한 속성 */
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    text-rendering: optimizeLegibility;
+    font-synthesis: none;
 }
+@media screen and (max-width: 768px) {
+    :root{
+        font-size: 14px;
+    }
+
+}
+    
+
+    body{
+        color: var(--black);
+        background-color: var(--mainBg-color);
+    }
