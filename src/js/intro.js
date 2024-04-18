@@ -4,8 +4,8 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 
 export function intro(){
     gsap.registerPlugin(ScrollTrigger)
-    const frameCount=14
-    let offsetValue=200
+    const frameCount=7
+    let offsetValue=500
     // (너비)씩 이동해라
     gsap.to('.img',{
         backgroundPosition:(-offsetValue*frameCount)+'px',

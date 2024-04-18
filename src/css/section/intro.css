@@ -22,7 +22,7 @@
 .intro_text{
     width: 100%;
     height: 50vh;
-    background-color: var(--black);
+    background-color: var(--subBg200);
     color: var(--white);
     display: flex;
     align-items: center;
@@ -30,6 +30,7 @@
     flex-direction: column;
     position: relative;
 }
+
 .intro_text .text{
     font-size: 3vw;
     line-height: 1.5;
@@ -48,12 +49,14 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-    width: 197px;
-    height: 337px;
+    width: 500px;
+    height: 500px;
     overflow: hidden;
     filter: grayscale(100%);
     opacity: 0;
-background: url(/vite-portfolio/src/imgs/KakaoTalk_20240417_094739471.png);
+    background: url(../../imgs/thefinal_logo.png);
+    /* background-size: cover; */
+    
     }
 
 .intro_text:hover .text{
@@ -63,7 +66,7 @@ background: url(/vite-portfolio/src/imgs/KakaoTalk_20240417_094739471.png);
 
 .intro_text:hover .img{
     opacity: 1;
-    filter: grayscale(0);
+    /* filter: grayscale(0); */
 }
 
 .intro_lines{
@@ -98,5 +101,17 @@ background: url(/vite-portfolio/src/imgs/KakaoTalk_20240417_094739471.png);
     .intro_text .text{
         font-size: 24px;
     }
-    
+    /* .intro_text .img{
+        background: url(../../imgs/final_logo.png);
+        position: absolute;
+        background-size: cover;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 33%;
+    height: 33%;
+    overflow: hidden;
+    filter: grayscale(100%);
+    opacity: 0;
+    } */
 }
