@@ -12,3 +12,10 @@
 @import url(section/works.css);
 @import url(section/graphics.css);
 @import url(section/about.css);
+
+
+/* --임시!!!----- */
+#graphics, #about{
+    height: 100vh;
+}
+/* 임시!!! */
