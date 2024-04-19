@@ -45,7 +45,7 @@
 }
 
 .intro_text .img{
-    position: absolute;
+    /* position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
@@ -55,9 +55,28 @@
     filter: grayscale(100%);
     opacity: 0;
     background: url(../../imgs/thefinal_logo.png);
-    /* background-size: cover; */
-    
+    background-size: cover; */
+
+    width: 25vw;
+    height: 25vw;
+    max-width: 500px;
+    max-height: 500px;
+    margin: auto;
+    background-image: url(../../imgs/thefinal_logo.png);
+    background-size: 700%;
+    /* ^ background-size ^ 100%* 갯수 >> js>>  */
+    /* bg-size cover는 안먹음  */
+    border: 1px solid #000;
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
     }
+
+
+
+
 
 .intro_text:hover .text{
     opacity: 0;
