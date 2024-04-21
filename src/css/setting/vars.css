@@ -7,13 +7,13 @@
 
 
     /* --mainBg-color: #f00; */
-    --mainBg-color: #FAF7ED;
+    --mainBg-color: #F1F8F8;
 
-    --subBg100: #578DF9;
-    --subBg200: #0442BF; 
-    --subBg300: #0339A6; 
-    --subBg400: #022873; 
-    --subBg500: #021F59; 
+    --subBg100: #C9E4E4;
+    --subBg200: #bbdddd; 
+    --subBg300: #aed6d6; 
+    --subBg400: #a0cfcf; 
+    --subBg500: #92c8c8; 
 
     --white: #fff;
     --black: #000;
