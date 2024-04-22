@@ -1,0 +1,128 @@
+.graphics_inner {
+    width: 100%;
+    height: 100%;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    background: var(--black);
+}
+
+.graphic_title em {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 2;
+}
+
+.graphic_title {
+    position: sticky;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: 5vw;
+    font-size: 4vw;
+    line-height: 1.6;
+    font-family: var(--mainKor-font);
+    text-transform: uppercase;
+    color: var(--white);
+    border-bottom: .4vw solid var(--white);
+    margin-bottom: 100px;
+    background-color: var(--black);
+    z-index: 999;
+
+}
+
+.graphics_wrap {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.graphic_item {
+    width: 30%;
+    margin-top: 200px;
+}
+
+.graphic_item:nth-child(even) {
+    margin-top: 0;
+}
+
+.graphic_item img {
+    width: 100%;
+}
+
+.graphic_item .img_box {
+    position: relative;
+
+}
+
+.graphic_item .img_box::before {
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: url(../../imgs/KakaoTalk_20240422_105302709_01.png) no-repeat center/35px;
+    background-size: cover;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    z-index: 10;
+    transition: .35s;
+
+    opacity: 0;
+
+}
+
+.graphic_item .img_box::after {
+    position: absolute;
+    content: '';
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: url(../../imgs/KakaoTalk_20240422_105302709.png) no-repeat center/160px;
+    background-size: cover;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: spinAni 10s infinite linear;
+    opacity: 0;
+}
+.graphic_item:hover .img_box::before{
+    opacity: 1;
+}
+.graphic_item:hover .img_box::after{
+    opacity: 1;
+}
+.graphic_item .img_box img{filter: brightness(50%);}
+.graphic_item:hover .img_box img{filter: brightness(100%);}
+
+/* spinning_animation>> translate(-50%,-50%)를 꼭!!!!! 추가  */
+
+@keyframes spinAni {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+
+
+@media screen and (max-width:768px) {
+
+
+    .graphic_title {
+        width: 100%;
+        margin-bottom: 10vw;
+        font-size: 30px;
+        height: auto;
+        top: 68px;
+        z-index: 99999;
+        background-color: var(--mainBg-color);
+    }
+
+}
