@@ -25,17 +25,20 @@
 }
 
 .pf_item{
+    width: 90%;
     height: 70vh;
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: sticky;
     left: 0;
+    border-radius: 20px;
 }
 
 .pf_item.s1{
-    background-color: var(--subBg100);
+    background-color: var(--subBg400);
     top: 180px;
 }
 .pf_item.s2{
@@ -44,12 +47,12 @@
 
 }
 .pf_item.s3{
-    background-color: var(--subBg300);
+    background-color: var(--subBg400);
     top: 220px;
 
 }
 .pf_item.s4{
-    background-color: var(--subBg400);
+    background-color: var(--subBg200);
     top: 240px;
 
 }
@@ -61,12 +64,14 @@
     position: absolute;
     left: 1vw;
     top: 1vw;
+    color: var(--white);
 }
 
 
 .pf_item .text{
     text-align: center;
     margin-bottom: 1rem;
+    color: var(--white);
 }
 
 .pf_item .text div{

@@ -6,14 +6,26 @@
     --mainNum-font: "Nunit";
 
 
-    /* --mainBg-color: #f00; */
-    --mainBg-color: #F1F8F8;
+    --mainBg-color: #f8f6dd;
+    /* --mainBg-color:  #FAF7ED; */
 
-    --subBg100: #C9E4E4;
-    --subBg200: #bbdddd; 
-    --subBg300: #aed6d6; 
-    --subBg400: #a0cfcf; 
-    --subBg500: #92c8c8; 
+    /* --subBg100: #B3b19f;
+    --subBg200: #9e9c87; 
+    --subBg300: #898771; 
+    --subBg400: #74735d; 
+    --subBg500: #605f4b;  */
+
+    --subBg100: #577785;
+    --subBg200: #456370; 
+    --subBg300: #354f5a; 
+    --subBg400: #264653; 
+    --subBg500: #283c45; 
+
+
+    --ptColor1: #fbee00;
+    --ptColor2: #cfddbd;
+    --ptColor3: #f8f6dd;
+
 
     --white: #fff;
     --black: #000;
